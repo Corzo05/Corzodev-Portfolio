@@ -1,0 +1,26 @@
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1c1c1c;
+    height: 55px;
+    box-shadow: 1px 1px 15px 5px #1c1c1c;
+}
+
+.logoTitulo{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.logoTitulo img{
+    height: 40px;
+    width: 75px;
+    margin-right: 10px;
+}
+
+.logoTitulo h1{
+    margin-top: 9px;
+    color: #d4ffd9;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+}

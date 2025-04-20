@@ -1,0 +1,1338 @@
+.div_flex {
+    display: flex;
+}
+
+.flex_column {
+    flex-direction: column;
+}
+
+.flex_row {
+    flex-direction: row;
+}
+
+.alignItemsCenter {
+    align-items: center;
+}
+
+.img_inicio {
+    filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.3));
+    animation: upAndDown infinite 15s ease-in-out;
+}
+
+.content_project {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 20px;
+    align-items: center;
+}
+
+/* Components */
+
+#card_inicio,
+#card_aboutMe,
+#card_contact,
+#img_vector,
+#mini,
+#card_project1,
+#card_project2,
+#card_project3,
+#card_project4 {
+    transition: all ease-in-out 0.5s;
+}
+
+#card_inicio:hover,
+#card_aboutMe:hover,
+#card_contact:hover {
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+    background-color: #282828;
+}
+
+#img_vector:hover {
+    outline: solid 2px rgba(255, 255, 255, 0.1);
+}
+
+#mini:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+#card_project1:hover,
+#card_project2:hover,
+#card_project3:hover,
+#card_project4:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes upAndDown {
+    7% {
+        transform: translateY(-15px);
+    }
+
+    14% {
+        transform: translateY(-15px);
+    }
+
+    21% {
+        transform: translateY(15px);
+    }
+
+    28% {
+        transform: translateY(15px);
+    }
+
+    35% {
+        transform: translateY(-15px);
+    }
+
+    42% {
+        transform: translateY(-15px);
+    }
+
+    49% {
+        transform: translateY(15px);
+    }
+
+    56% {
+        transform: translateY(15px);
+    }
+
+    63% {
+        transform: translateY(-15px);
+    }
+
+    70% {
+        transform: translateY(-15px);
+    }
+
+    77% {
+        transform: translateY(15px);
+    }
+
+    84% {
+        transform: translateY(15px);
+    }
+
+    91% {
+        transform: translateY(-15px);
+    }
+
+    98% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+/* Responsive */
+
+/* Pantallas grandes */
+@media (min-width: 1581px) {
+
+    html {
+        scrollbar-width: thin;
+        scrollbar-color: #319b00 #d4ffd9;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+
+    #body{
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+    #label_menu {
+        display: none;
+    }
+
+    #header {
+        width: 100vw;
+        height: 10vh;
+    }
+
+    #header a{
+        font-size: 20px;
+    }
+
+    #buttonList {
+        display: block;
+    }
+
+
+    #Inicio {
+        flex-direction: row;
+        height: 100vh;
+        padding: 10vh 8vw 6vh 4vw;
+    }
+
+    #card_inicio {
+        width: auto;
+        height: auto;
+        margin: 8vh 8vw 5vh 8vw;
+        padding: 4vh;
+    }
+
+    #cardBody_home {
+        justify-content: center;
+    }
+
+    #title_home,
+    #title_aboutMe,
+    #title_habilities,
+    #title_projects,
+    #title_contact {
+        font-size: 60px;
+    }
+
+    #subtitle_home,
+    #subtitle_aboutMe {
+        font-size: 38px;
+    }
+
+    #text_home {
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    #SobreMi {
+        height: auto;
+        padding: 5vh 8vw 5vh 8vw;
+    }
+
+    #container-card-image {
+        flex-direction: row;
+        gap: 9vw;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    #container-cardText {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #text-aboutMe {
+        font-size: 20px;
+        line-height: 1.6;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    #img_vector {
+        width: auto;
+        height: auto;
+        margin-top: 3vh;
+        padding: 2px;
+    }
+
+    #Habilidades {
+        height: auto;
+        align-items: flex-start;
+        padding: 5vh 10vw 10vh 10vw;
+    }
+
+    #container-titleHabilities {
+        width: 90vw;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container_grid {
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 90vw;
+        height: 60vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        row-gap: 10%;
+    }
+
+    #mini {
+        width: 18vw;
+        height: auto;
+        align-items: center;
+    }
+
+    #mini img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #mini h4 {
+        font-size: 27px;
+    }
+
+    #miniCardBody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Proyectos{
+        height: auto;
+        padding: 5vh 5vw 10vh 5vw;
+    }
+
+    #div_general_projects {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    #div_projects {
+        width: 90vw;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #card_project1,
+    #card_project2,
+    #card_project3,
+    #card_project4 {
+        width: 27vw;
+        height: 70vh;
+    }
+
+    #card_project1 img,
+    #card_project2 img,
+    #card_project3 img,
+    #card_project4 img{
+        width: 27vw;
+        height: 35vh;
+    }
+
+    #subtitle_proyect{
+        font-size: 27px;
+    }
+
+    #text_project{
+        font-size: 17px;
+        line-height: 24px;
+        text-align: justify;
+    }
+
+    #button_project{
+        font-size: 17px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #button_projectMargin{
+        font-size: 17px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    #Contactame{
+        height: auto;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    #container_general_contact{
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container_contact{
+        flex-direction: row;
+    }
+
+    #card_contact{
+        width: 45vw;
+        height: auto;
+        padding: 5vh;
+    }
+
+    #containerRedes{
+        flex-direction: column;
+    }
+    
+    #text_contact{
+        width: 27vw;
+        font-size: 18px;
+    }
+
+    #Footer{
+        max-width: 100vw;
+    }
+
+    .img_inicio {
+        width: 80vw;
+        height: 65vh;
+        margin-bottom: 5vh;
+    }
+
+    .img_vector {
+        width: 25vw;
+        height: 75vh;
+    }
+
+    .imgTelf{
+        width: 20vw;
+        height: 35vh;
+    }
+}
+
+/* Laptops */
+@media (min-width: 1101px) and (max-width: 1580px) {
+
+    html {
+        scrollbar-width: thin;
+        scrollbar-color: #319b00 #d4ffd9;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+
+    #body{
+        overflow-x: hidden;
+        margin: 0;
+        max-width: 100vw;
+    }
+
+    #label_menu {
+        display: none;
+    }
+
+    #header {
+        width: 100vw;
+        height: 10vh;
+    }
+
+    #buttonList {
+        display: block;
+    }
+
+
+    #Inicio {
+        flex-direction: row;
+        height: 100vh;
+        padding: 10vh 8vw 6vh 4vw;
+    }
+
+    #card_inicio {
+        width: auto;
+        height: auto;
+        margin: 8vh 8vw 5vh 8vw;
+        padding: 4vh;
+    }
+
+    #cardBody_home {
+        justify-content: center;
+    }
+
+    #title_home,
+    #title_aboutMe,
+    #title_habilities,
+    #title_projects,
+    #title_contact {
+        font-size: 55px;
+    }
+
+    #subtitle_home,
+    #subtitle_aboutMe {
+        font-size: 34px;
+    }
+
+    #text_home {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    #SobreMi {
+        height: auto;
+        padding: 5vh 8vw 5vh 8vw;
+    }
+
+    #container-card-image {
+        flex-direction: row;
+        gap: 9vw;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    #container-cardText {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #text-aboutMe {
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: justify;
+        padding: 18px;
+    }
+
+    #img_vector {
+        width: auto;
+        height: auto;
+        margin-top: 3vh;
+        padding: 2px;
+    }
+
+    #Habilidades {
+        height: auto;
+        align-items: flex-start;
+        padding: 5vh 10vw 10vh 10vw;
+    }
+
+    #container-titleHabilities {
+        width: 90vw;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container_grid {
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 90vw;
+        height: 60vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        row-gap: 10%;
+    }
+
+    #mini {
+        width: 18vw;
+        height: auto;
+        align-items: center;
+    }
+
+    #mini img {
+        width: 75px;
+        height: 75px;
+    }
+
+    #mini h4 {
+        font-size: 25px;
+    }
+
+    #miniCardBody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Proyectos{
+        height: auto;
+        padding: 5vh 5vw 10vh 5vw;
+    }
+
+    #div_general_projects {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    #div_projects {
+        width: 90vw;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    #card_project1,
+    #card_project2,
+    #card_project3,
+    #card_project4 {
+        width: 27vw;
+        height: 73vh;
+    }
+
+    #card_project1 img,
+    #card_project2 img,
+    #card_project3 img,
+    #card_project4 img{
+        width: 27vw;
+        height: 35vh;
+    }
+
+    #subtitle_proyect{
+        font-size: 25px;
+    }
+
+    #text_project{
+        font-size: 15px;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    #button_project, #button_projectMargin{
+        font-size: 17px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #Contactame{
+        height: auto;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    #container_general_contact{
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container_contact{
+        flex-direction: row;
+    }
+
+    #card_contact{
+        width: 40vw;
+        height: auto;
+        padding: 5vh;
+    }
+
+    #containerRedes{
+        flex-direction: column;
+    }
+
+    #text_contact{
+        width: 25vw;
+        font-size: 16px;
+    }
+
+    #Footer{
+        max-width: 100vw;
+    }
+
+    .img_inicio {
+        width: 80vw;
+        height: 65vh;
+        margin-bottom: 5vh;
+    }
+
+    .img_vector {
+        width: 25vw;
+        height: 75vh;
+    }
+
+    .imgTelf{
+        width: 20vw;
+        height: 35vh;
+    }
+}
+
+/* Ipad Pro */
+@media only screen 
+  and (device-width: 1024px) 
+  and (device-height: 1366px) {
+
+    html {
+        scrollbar-width: thin;
+        scrollbar-color: #319b00 #d4ffd9;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+
+    #body{
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+    #header {
+        width: 100vw;
+        height: 8vh;
+    }
+
+    #Inicio {
+        flex-direction: column;
+        height: auto;
+        padding-top: 10vh;
+    }
+
+    #card_inicio {
+        width: auto;
+        height: auto;
+        margin: 8vh 10vw 5vh 10vw;
+        padding: 4vh;
+    }
+
+    #cardBody_home {
+        justify-content: center;
+    }
+
+    #title_home,
+    #title_aboutMe,
+    #title_habilities,
+    #title_projects,
+    #title_contact {
+        font-size: 55px;
+    }
+
+    #subtitle_home,
+    #subtitle_aboutMe {
+        font-size: 42px;
+    }
+
+    #text_home {
+        font-size: 21px;
+        line-height: 1.7;
+        text-align: justify;
+    }
+
+    #SobreMi {
+        height: auto;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    #container-card-image {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    #container-cardText {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #text-aboutMe {
+        font-size: 21px;
+        line-height: 1.7;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    #img_vector {
+        width: auto;
+        height: auto;
+        margin-top: 3vh;
+        padding: 2px;
+    }
+
+    #Habilidades {
+        height: auto;
+        align-items: flex-start;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    #container-titleHabilities {
+        width: 90vw;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container_grid {
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 90vw;
+        height: 38vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 5%;
+    }
+
+    #mini {
+        width: 26vw;
+        height: auto;
+        align-items: center;
+    }
+
+    #mini img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #mini h4 {
+        font-size: 17px;
+    }
+
+    #miniCardBody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Proyectos{
+        height: auto;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    #div_general_projects {
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #div_projects {
+        width: 90vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    #card_project1,
+    #card_project2,
+    #card_project3,
+    #card_project4 {
+        width: 80vw;
+        height: auto;
+    }
+
+    #card_project1 img,
+    #card_project2 img,
+    #card_project3 img,
+    #card_project4 img{
+        width: 80vw;
+        height: 30vh;
+    }
+
+    #subtitle_proyect{
+        font-size: 35px;
+    }
+
+    #text_project{
+        font-size: 17px;
+        line-height: 25px;
+        text-align: justify;
+    }
+
+    #button_project, #button_projectMargin{
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    #Contactame{
+        height: auto;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    #container_general_contact{
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container_contact{
+        flex-direction: column;
+    }
+
+    #card_contact{
+        width: auto;
+        height: auto;
+        padding: 4vh;
+    }
+
+    #containerRedes{
+        flex-direction: row;
+    }
+
+    #text_contact{
+        width: 80vw;
+        font-size: 20px;
+    }
+
+    #Footer{
+        max-width: 100vw;
+    }
+
+    .img_inicio {
+        width: 70vw;
+        height: 45vh;
+        margin-bottom: 10vh;
+    }
+
+    .img_vector {
+        width: 65vw;
+        height: 55vh;
+    }
+
+    .imgTelf{
+        width: 35vw;
+        height: 20vh;
+    }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1100px) {
+
+    html {
+        scrollbar-width: thin;
+        scrollbar-color: #319b00 #d4ffd9;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+    
+    #body{
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+    #header {
+        width: 100vw;
+        height: 8vh;
+    }
+
+    #buttonList {
+        display: none;
+    }
+
+
+    #Inicio {
+        flex-direction: column;
+        height: auto;
+        padding-top: 10vh;
+    }
+
+    #card_inicio {
+        width: auto;
+        height: auto;
+        margin: 8vh 10vw 5vh 10vw;
+        padding: 4vh;
+    }
+
+    #cardBody_home {
+        justify-content: center;
+    }
+
+    #title_home,
+    #title_aboutMe,
+    #title_habilities,
+    #title_projects,
+    #title_contact {
+        font-size: 55px;
+    }
+
+    #subtitle_home,
+    #subtitle_aboutMe {
+        font-size: 42px;
+    }
+
+    #text_home {
+        font-size: 21px;
+        line-height: 1.7;
+        text-align: justify;
+    }
+
+    #SobreMi {
+        height: auto;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    #container-card-image {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    #container-cardText {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #text-aboutMe {
+        font-size: 21px;
+        line-height: 1.7;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    #img_vector {
+        width: auto;
+        height: auto;
+        margin-top: 3vh;
+        padding: 2px;
+    }
+
+    #Habilidades {
+        height: auto;
+        align-items: flex-start;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    #container-titleHabilities {
+        width: 90vw;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container_grid {
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 90vw;
+        height: 38vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 5%;
+    }
+
+    #mini {
+        width: 26vw;
+        height: auto;
+        align-items: center;
+    }
+
+    #mini img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #mini h4 {
+        font-size: 17px;
+    }
+
+    #miniCardBody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Proyectos{
+        height: auto;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    #div_general_projects {
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #div_projects {
+        width: 90vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    #card_project1,
+    #card_project2,
+    #card_project3,
+    #card_project4 {
+        width: 80vw;
+        height: auto;
+    }
+
+    #card_project1 img,
+    #card_project2 img,
+    #card_project3 img,
+    #card_project4 img{
+        width: 80vw;
+        height: 30vh;
+    }
+
+    #subtitle_proyect{
+        font-size: 35px;
+    }
+
+    #text_project{
+        font-size: 17px;
+        line-height: 25px;
+        text-align: justify;
+    }
+
+    #button_project, #button_projectMargin{
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    #Contactame{
+        height: auto;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    #container_general_contact{
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container_contact{
+        flex-direction: column;
+    }
+
+    #card_contact{
+        width: auto;
+        height: auto;
+        padding: 4vh;
+    }
+
+    #containerRedes{
+        flex-direction: row;
+    }
+
+    #text_contact{
+        width: 80vw;
+        font-size: 20px;
+    }
+
+    #Footer{
+        max-width: 100vw;
+    }
+
+    .img_inicio {
+        width: 70vw;
+        height: 45vh;
+        margin-bottom: 10vh;
+    }
+
+    .img_vector {
+        width: 65vw;
+        height: 55vh;
+    }
+
+    .imgTelf{
+        width: 35vw;
+        height: 20vh;
+    }
+}
+
+/* Telefonos */
+@media (max-width: 600px) {
+
+    html {
+        scrollbar-width: thin;
+        scrollbar-color: #319b00 #d4ffd9;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+
+    #body{
+        overflow-x: hidden;
+        margin: 0;
+    }
+
+    #header {
+        width: 100vw;
+        height: 8vh;
+    }
+
+    #buttonList {
+        display: none;
+    }
+
+    #Inicio {
+        flex-direction: column;
+        height: auto;
+        padding-top: 10vh;
+    }
+
+    #card_inicio {
+        width: auto;
+        height: auto;
+        margin: 8vh 10vw 5vh 10vw;
+        padding: 4vh;
+    }
+
+    #cardBody_home {
+        justify-content: center;
+    }
+
+    #title_home,
+    #title_aboutMe,
+    #title_habilities,
+    #title_projects,
+    #title_contact {
+        font-size: 38px;
+    }
+
+    #subtitle_home,
+    #subtitle_aboutMe {
+        font-size: 22px;
+    }
+
+    #text_home {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    #SobreMi {
+        height: auto;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    #container-card-image {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    #container-cardText {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #text-aboutMe {
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: justify;
+        padding: 8px;
+    }
+
+    #img_vector {
+        width: auto;
+        height: auto;
+        margin-top: 3vh;
+        padding: 2px;
+    }
+
+    #Habilidades {
+        height: auto;
+        align-items: flex-start;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    #container-titleHabilities {
+        width: 90vw;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container_grid {
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 90vw;
+        height: 80vh;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1%;
+    }
+
+    #mini {
+        width: 43vw;
+        height: auto;
+        align-items: center;
+    }
+
+    #mini img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #mini h4 {
+        font-size: 17px;
+    }
+
+    #miniCardBody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Proyectos{
+        height: auto;
+        padding: 5vh 5vw 5vh 5vw;
+    }
+
+    #div_general_projects {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #div_projects {
+        width: 90vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #card_project1,
+    #card_project2,
+    #card_project3,
+    #card_project4 {
+        width: 80vw;
+        height: auto;
+    }
+
+    #card_project1 img,
+    #card_project2 img,
+    #card_project3 img,
+    #card_project4 img{
+        width: 80vw;
+        height: 30vh;
+    }
+
+    #subtitle_proyect{
+        font-size: 20px;
+    }
+
+    #text_project{
+        font-size: 11px;
+        line-height: 15px;
+        text-align: justify;
+    }
+
+    #button_project, #button_projectMargin{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    #Contactame{
+        height: auto;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    #container_general_contact{
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container_contact{
+        flex-direction: column;
+    }
+
+    #card_contact{
+        width: auto;
+        height: auto;
+        padding: "45px 30px";
+    }
+
+    #containerRedes{
+        flex-direction: row;
+    }
+
+    #text_contact{
+        width: 80vw;
+    }
+
+    #Footer{
+        max-width: 100vw;
+    }
+
+    .img_inicio {
+        width: 70vw;
+        height: 45vh;
+        margin-bottom: 10vh;
+    }
+
+    .img_vector {
+        width: 70vw;
+        height: 55vh;
+    }
+
+    .imgTelf{
+        width: 45vw;
+        height: 25vh;
+    }
+}

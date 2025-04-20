@@ -1,0 +1,37 @@
+.card{
+    padding: 25px;
+    background-color: #1c1c1c;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-family: "Nunito", sans-serif;
+    color: #d4ffd9;
+    margin-bottom: 10px;
+    font-size: 55px;
+    text-align: center;
+}
+
+.subTitle{
+    font-family: "Nunito", sans-serif;
+    color: #d4ffd9;
+    font-size: 30px;
+    margin: 0;
+}
+
+.text{
+    font-family: "Nunito", sans-serif;
+    color: #d4ffd9;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 30px;
+}

@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Spanish
 
-## Getting Started
+## Desarrollado con React + Next.js + TypeScript
 
-First, run the development server:
+### :book: Dependencias Usadas:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- aos: Librería de animaciones de CSS
+- bootstrap: Framework de CSS para estilos rápidos.
+- dotenv: Cargador de variables de entorno (`.env`).
+- next.js: Framework de desarrollo web basado en React.
+- resend: API de envío de Emails.
+- sweetalert: Librería de alertas visualmente atractivas. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### :hammer::wrench: Instalación y uso:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Clonar repositorio o descargar .zip y extraer.
+- Abrir el proyecto e instalar las dependencias con `npm install`.
+- Crea el archivo `.env` con las siguientes variables:
+  RESEND_API_KEY= (Key de la API de Resend)
+  EMAIL_DESTINATARIO= (Email al cual le llegaran los mensajes).
+- Enciende el servidor con `npm run dev` y listo, la app estará accesible en http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# English
 
-## Learn More
+## Powered by React + Next.js + TypeScript
 
-To learn more about Next.js, take a look at the following resources:
+### :book: Dependencies Used:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- aos: CSS animation library
+- bootstrap: CSS framework for rapid styling
+- dotenv: Environment variable loader (`.env`)
+- next.js: React-based web development framework
+- resend: Email sending API
+- sweetalert: Visually appealing alert library
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### :hammer::wrench: Installation and Use:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Clone the repository or download and extract the .zip file.
+- Open the project and install the dependencies with `npm install`.
+- Create the `.env` file with the following variables:
+RESEND_API_KEY= (Resend API Key)
+EMAIL_DESTINATARIO= (Email address where messages will be sent)
+- Start the server with `npm run dev` and that's it, the app will be accessible at http://localhost:3000

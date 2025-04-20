@@ -73,7 +73,7 @@ export function ButtonList() {
       <a href="#Habilidades">Habilidades</a>
       <a href="#Proyectos">Proyectos</a>
       <a href="#Contactame">Contáctame</a>
-      <a href="./CV_joseCorzo.pdf" download>
+      <a href="./CV_JoseCorzo.pdf" download>
         CV
       </a>
     </div>
@@ -94,7 +94,7 @@ export function Menu({ showMenu }: MenuProps) {
             <a href="#Habilidades">Habilidades</a>
             <a href="#Proyectos">Proyectos</a>
             <a href="#Contactame">Contáctame</a>
-            <a href="./CV_joseCorzo.pdf" download>CV</a>
+            <a href="./CV_JoseCorzo.pdf" download>CV</a>
           </>
         ) : ("")
       }

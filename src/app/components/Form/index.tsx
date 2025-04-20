@@ -6,12 +6,16 @@ import Row from "react-bootstrap/Row";
 import Swal from "sweetalert2";
 
 export default function FormContact() {
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const form = document.getElementById("form-email") as HTMLFormElement;
 
-    if(e.target.email.value === "" || e.target.subject.value === "" || e.target.message.value === ""){
+    const email = e.currentTarget.elements.namedItem("email") as HTMLInputElement
+    const subject = e.currentTarget.elements.namedItem("subject") as HTMLInputElement
+    const message = e.currentTarget.elements.namedItem("message") as HTMLTextAreaElement
+
+    if(email.value === "" || subject.value === "" || message.value === ""){
       Swal.fire({
         icon: 'error',
         title: 'Error',
@@ -22,9 +26,9 @@ export default function FormContact() {
       });
     }else{
       const data = {
-        email: e.target.email.value,
-        subject: e.target.subject.value,
-        message: e.target.message.value,
+        email: email.value,
+        subject: subject.value,
+        message: message.value,
       };
   
       const JSONdata = JSON.stringify(data);

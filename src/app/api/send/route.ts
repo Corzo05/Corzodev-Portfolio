@@ -7,7 +7,7 @@ dotenv.config();
 const resend = new Resend(process.env.RESEND_API_KEY);
 const emailDestinatario = process.env.EMAIL_DESTINATARIO;
 
-export async function POST(req: any) {
+export async function POST(req: Request) {
 
   const body = await req.json();
 

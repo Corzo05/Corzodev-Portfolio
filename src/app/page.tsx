@@ -66,7 +66,7 @@ export default function Vista() {
       <Inicio>
         <Card border="solid 2px #353333" id="card_inicio">
           <CardBody id="cardBody_home">
-            <Title title="¿Cómo Estás?" id="title_home" />
+            <Title title="¿Cómo estás?" id="title_home" />
             <SubTitle subTitle="Soy José Corzo" id="subtitle_home" />
             <Text text={texto_bienvenida} id="text_home" />
           </CardBody>
@@ -311,7 +311,7 @@ export default function Vista() {
             <Card border="2px solid #353333" padding="0" id="card_project3" data_aos="zoom-in">
               <CardBody>
                 <img
-                  src="./img/sistemaJava.png"
+                  src="./img/portfolio.png"
                   alt="Portafolio Web"
                   style={{
                     borderRadius: "26px",
@@ -327,8 +327,8 @@ export default function Vista() {
                   />
                   <Text text={textoProyecto3} id="text_project" />
                   <div className="div_flex gap-3">
-                    <Button text="Demo" id="button_projectMargin"/>
-                    <Button text="Code" id="button_projectMargin"/>
+                    <Button text="Demo" id="button_projectMargin" onClick={() => handleLink("https://corzodev-portfolio.vercel.app/")}/>
+                    <Button text="Code" id="button_projectMargin" onClick={() => handleLink("https://github.com/Corzo05/Corzodev-Portfolio")}/>
                   </div>
                 </div>
               </CardBody>

@@ -184,7 +184,7 @@
     #title_habilities,
     #title_projects,
     #title_contact {
-        font-size: 60px;
+        font-size: 3.7vw;
     }
 
     #subtitle_home,
@@ -246,10 +246,10 @@
 
     #container_grid {
         overflow: hidden;
-        padding-top: 20px;
-        padding-bottom: 10px;
+        padding-top: 2vw;
+        padding-bottom: 5vw;
         width: 90vw;
-        height: 60vh;
+        height: auto;
         grid-template-columns: 1fr 1fr 1fr 1fr ;
         row-gap: 10%;
     }
@@ -297,7 +297,7 @@
     #card_project3,
     #card_project4 {
         width: 27vw;
-        height: 70vh;
+        height: auto;
     }
 
     #card_project1 img,
@@ -309,11 +309,11 @@
     }
 
     #subtitle_proyect{
-        font-size: 27px;
+        font-size: 1.5vw;
     }
 
     #text_project{
-        font-size: 17px;
+        font-size: 1vw;
         line-height: 24px;
         text-align: justify;
     }
@@ -434,7 +434,7 @@
     #title_habilities,
     #title_projects,
     #title_contact {
-        font-size: 55px;
+        font-size: 3.7vw;
     }
 
     #subtitle_home,
@@ -496,10 +496,10 @@
 
     #container_grid {
         overflow: hidden;
-        padding-top: 20px;
-        padding-bottom: 10px;
+        padding-top: 2vw;
+        padding-bottom: 5vw;
         width: 90vw;
-        height: 60vh;
+        height: auto;
         grid-template-columns: 1fr 1fr 1fr 1fr ;
         row-gap: 10%;
     }
@@ -548,7 +548,7 @@
     #card_project3,
     #card_project4 {
         width: 27vw;
-        height: 73vh;
+        height: auto;
     }
 
     #card_project1 img,
@@ -560,11 +560,11 @@
     }
 
     #subtitle_proyect{
-        font-size: 25px;
+        font-size: 1.5vw;
     }
 
     #text_project{
-        font-size: 15px;
+        font-size: 1vw;
         line-height: 20px;
         text-align: justify;
     }
@@ -732,10 +732,10 @@
 
     #container_grid {
         overflow: hidden;
-        padding-top: 20px;
-        padding-bottom: 10px;
+        padding-top: 2vw;
+        padding-bottom: 5vw;
         width: 90vw;
-        height: 38vh;
+        height: auto;
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 5%;
     }
@@ -971,10 +971,10 @@
 
     #container_grid {
         overflow: hidden;
-        padding-top: 20px;
-        padding-bottom: 10px;
+        padding-top: 2vw;
+        padding-bottom: 5.5vw;
         width: 90vw;
-        height: 38vh;
+        height: auto;
         grid-template-columns: 1fr 1fr 1fr;
         row-gap: 5%;
     }
@@ -1209,10 +1209,10 @@
 
     #container_grid {
         overflow: hidden;
-        padding-top: 20px;
-        padding-bottom: 10px;
+        padding-top: 2vw;
+        padding-bottom: 5.5vw;
         width: 90vw;
-        height: 80vh;
+        height: auto;
         grid-template-columns: 1fr 1fr;
         row-gap: 1%;
     }

@@ -37,7 +37,8 @@
 #card_project1,
 #card_project2,
 #card_project3,
-#card_project4 {
+#card_project4,
+#card_project5 {
     transition: all ease-in-out 0.5s;
 }
 
@@ -60,7 +61,8 @@
 #card_project1:hover,
 #card_project2:hover,
 #card_project3:hover,
-#card_project4:hover {
+#card_project4:hover, 
+#card_project5:hover {
     transform: scale(1.03);
     box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
 }

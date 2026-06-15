@@ -44,13 +44,12 @@ export default function Vista() {
   };
 
   const texto_bienvenida =
-    "Desarrollador Web Full Stack y de Sistemas de Información. Me apasiona la programación en general y el estudio de la misma de forma autodidacta. Además, poseo un nivel considerable de inglés adquirido de forma autodidacta. Éste es mi portafolio web que contiene información básica sobre mi, así como información de contacto, habilidades adquiridas hasta el momento y algunos de mis proyectos más relevantes hasta ahora.";
+    "Desarrollador Web Full Stack, Sistemas de Información y Aplicaciones. Me apasiona la programación en general y el estudio de la misma de forma autodidacta. Éste es mi portafolio web que contiene información básica sobre mi, así como información de contacto, habilidades adquiridas hasta el momento y algunos de mis proyectos más relevantes hasta ahora.";
 
-  const textoSobreMi = `Actualmente soy estudiante de Informática de 5to semestre y poseo previa experiencia en creación de Sistemas de Ventas, Sistemas de Gestión de notas académicas y Sitios web así como conocimientos y habilidades en lenguajes de programación para realizar dichos proyectos. 
+  const textoSobreMi = `Actualmente soy TSU en Informática y estudiante de Licenciatura en Computación, poseo previa experiencia en creación de Sistemas de Ventas, Sistemas de Gestión de notas académicas y Sitios web tanto en WordPress como código puro así como conocimientos y habilidades en lenguajes de programación para realizar dichos proyectos. 
 
-    Me considero alguien honesto, sincero, muy reservado, de bajo perfil y de gustos sencillos, alguien con responsabilidad, compromiso con sus trabajos y comunicación asertiva y/o eficiente cuando de trabajo se trata.
-
-    Pretendo ser mejor cada día con el autoaprendizaje sobre el mundo de la programación y aspiro a conseguir un trabajo estable ya sea remoto o presencial sobre mi carrera con la finalidad de obtener una remuneración económica y más experiencia para crecer como persona profesional y como programador.`;
+    Me considero alguien honesto, sincero, muy reservado, de bajo perfil y de gustos sencillos, alguien con responsabilidad, compromiso con sus trabajos, alguien que pretende ser mejor cada día con el autoaprendizaje sobre el mundo de la programación y alguien que tiene comunicación asertiva y/o eficiente cuando de trabajo se trata. 
+  `;
 
   const textoProyecto1 = `Este programa consiste en un Sistema de Gestión empresarial y de Facturación para empresas de cualquier índole que cuenta con las funciones princiapales de: Compra y Venta de Productos y Emisión de Reportes de Compra y Venta.`;
 
@@ -59,6 +58,12 @@ export default function Vista() {
   const textoProyecto3 = `Mi Portafolio Web con información básica sobre mí, mis conocimientos o habilidades, proyectos mas destacados, métodos de contacto, Curriculum Vitae y links a algunas de mis redes sociales.`;
 
   const textoProyecto4 = `Sitio Web Dedicado a empresa de chocolates ficticia y adaptable a empresas de cualquier índole, con secciones de Inicio/Landing, Productos, Servicios, Contacto y Galería de Imágenes.`;
+  
+  const textoProyecto5 = `Rediseño de sitio web antiguo a empresa de Software y Licenciamientos con secciones de Inicio/Landing, Productos, Servicios y Contacto, además de landings dedicadas a algunos de los servicios que ofrece la empresa.`;
+
+  const textoProyecto6 = `Rediseño de tienda virtual antigua para una empresa dedicada a la venta de productos de Seguridad Industrial con secciones básicas de información y extenso catálogo de productos a disposición del cliente.`;
+
+  const textoProyecto7 = `Landing Page para empresa de mantenimiento automotriz con información clave, formulario de contacto, buscador de baterías escrito directo en lenguaje PHP + HTML y conexión con cuenta de Instagram para mostrar publicaciones.`;
 
   return (
     <>
@@ -188,15 +193,15 @@ export default function Vista() {
             </MiniCard>
             <MiniCard border="2px solid #353333" id="mini" data_aos="fade-up">
               <MiniCardBody
-                text="Git"
-                img="/img/git.png"
+                text="WordPress"
+                img="/img/wp.png"
                 id="miniCardBody"
               />
             </MiniCard>
             <MiniCard border="2px solid #353333" id="mini" data_aos="fade-up">
               <MiniCardBody
-                text="GitHub"
-                img="/img/github.png"
+                text="Elementor"
+                img="/img/elementor.png"
                 id="miniCardBody"
               />
             </MiniCard>
@@ -334,7 +339,7 @@ export default function Vista() {
               </CardBody>
             </Card>
           </div>
-          <div className="div_flex mt-5 gap-5">
+          <div className="div_flex mt-5 mb-4 gap-5">
             <Card border="2px solid #353333" padding="0" id="card_project4" data_aos="zoom-in">
               <CardBody>
                 <img
@@ -376,6 +381,110 @@ export default function Vista() {
                 </div>
               </CardBody>
             </Card>
+          </div>
+          <div className="d-flex flex-column mt-5">
+            <SubTitle
+                subTitle="Sitios WordPress"
+                id="wordpressSubtitle"
+              />
+            <div className="div_flex mt-4 gap-5" id="div_projects">
+              <Card border="2px solid #353333" padding="0" id="card_project4" data_aos="zoom-in">
+                <CardBody>
+                  <img
+                    src="./img/coperca.png"
+                    alt="Imagen Sitio Web"
+                    style={{
+                      borderRadius: "26px",
+                      marginBottom: "15px",
+                      objectFit: "cover",
+                    }}
+                  />
+                  <div className="content_project">
+                    <SubTitle
+                      subTitle="E-commerce Coperca, C.A"
+                      textCenter
+                      id="subtitle_proyect"
+                    />
+                    <Text text={textoProyecto6} id="text_project" />
+                    <div className="div_flex gap-3">
+                      <Button
+                        text="Demo"
+                        onClick={() =>
+                          handleLink(
+                            "https://coperca.com"
+                          )
+                        }
+                        id="button_projectMargin"
+                      />
+                    </div>
+                  </div>
+                </CardBody>
+              </Card>
+              <Card border="2px solid #353333" padding="0" id="card_project4" data_aos="zoom-in">
+                <CardBody>
+                  <img
+                    src="./img/elmoca.png"
+                    alt="Imagen Sitio Web"
+                    style={{
+                      borderRadius: "26px",
+                      marginBottom: "15px",
+                      objectFit: "cover",
+                    }}
+                  />
+                  <div className="content_project">
+                    <SubTitle
+                      subTitle="Landing Page Grupo ELMOCA, C.A"
+                      textCenter
+                      id="subtitle_proyect"
+                    />
+                    <Text text={textoProyecto7} id="text_project" />
+                    <div className="div_flex gap-3">
+                      <Button
+                        text="Demo"
+                        onClick={() =>
+                          handleLink(
+                            "https://grupoelmoca.com"
+                          )
+                        }
+                        id="button_projectMargin"
+                      />
+                    </div>
+                  </div>
+                </CardBody>
+              </Card>
+              <Card border="2px solid #353333" padding="0" id="card_project4" data_aos="zoom-in">
+                <CardBody>
+                  <img
+                    src="./img/newTecno.png"
+                    alt="Imagen Sitio Web"
+                    style={{
+                      borderRadius: "26px",
+                      marginBottom: "15px",
+                      objectFit: "cover",
+                    }}
+                  />
+                  <div className="content_project">
+                    <SubTitle
+                      subTitle="Sitio Web Tecno Soluciones"
+                      textCenter
+                      id="subtitle_proyect"
+                    />
+                    <Text text={textoProyecto5} id="text_project" />
+                    <div className="div_flex gap-3">
+                      <Button
+                        text="Demo"
+                        onClick={() =>
+                          handleLink(
+                            "https://new.tecnosl.com"
+                          )
+                        }
+                        id="button_projectMargin"
+                      />
+                    </div>
+                  </div>
+                </CardBody>
+              </Card>
+            </div>
           </div>
         </div>
       </Proyectos>
